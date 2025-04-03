@@ -16,15 +16,14 @@
             @endforeach
         </ul>
         @endif
-
         <label>First name:</label>
-        <input name="first_name" required/><br><br>
+        <input name="first_name" value="{{ old('first_name') }}" required/><br><br>
 
         <label>Last name:</label>
-        <input name="last_name" required/><br><br>
+        <input name="last_name" value="{{ old('last_name') }}" required/><br><br>
 
         <label>Email:</label>
-        <input type="email" name="email" required/><br><br>
+        <input type="email" name="email" value="{{ old('email') }}" required/><br><br>
 
         <label>Password:</label>
         <input type="password" name="password" required/><br><br>

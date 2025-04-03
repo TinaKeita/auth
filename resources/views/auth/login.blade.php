@@ -6,7 +6,7 @@
     <title>Logout</title>
 </head>
 <body>
-    <h1>Logout</h1>
+    <h1>Login</h1>
     <form  method="POST">
     @csrf
         @if ($errors->any())
@@ -18,10 +18,11 @@
         @endif
 
         <label>Email:</label>
-        <input type="email" name="email" required/><br><br>
+        <input type="email" name="email" value="{{ old('email') }}" required/><br><br>
 
         <label>Password:</label>
         <input type="password" name="password" required/><br><br>
+
 
         <button>Login</button>
     </form>
